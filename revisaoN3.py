@@ -37,6 +37,4 @@ if usuario == usuario_correto and senha == senha_correta :
 
 else:
     print("Usuario ou senha inválidos.")
-
-
-
+    
