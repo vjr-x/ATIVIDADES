@@ -33,8 +33,8 @@ while True:
     elif escolha == "4":
         if n2 == 0:
             print("Não é possivel dividir por 0.")
-        total = n1 / n2
-        print(f"{n1} / {n2} = {total}")
+        else:
+            print(f"{n1} / {n2} = {n1 / n2}")
     else:
         print("Opção inválida!")
      
