@@ -1,16 +1,23 @@
 import math
 
-nota1 = float(input("Digite a nota do aluno: "))
-nota2 = float(input("Digite a nota do aluno: "))
-nota3 = float(input("Digite a nota do aluno: "))
+def calcular_media(notas: list) -> float:
+    media = sum(notas) / len(notas)
+    return math.ceil(média)
 
-média =(nota1 + nota2 + nota3) / 3
-média = math.ceil(média)
-# Aqui outra forma de arrebondar:
-média = round( média, 2)
-# Forma de arrebondar valores após a virgula:
+contador = 1
+notas = []
 
-print("A média foi de:", média)
+while True:
+    nota = float(input(f"Digite a nota {contador} ou -1 para sair: "))
+    
+    if nota == -1:
+        break
+
+    notas.append(nota)
+    print("Nota registrada!")
+
+media = calcular_media(notas)
+print("A média foi de: ", media)
 
 if média >= 0 and média <= 5.5:
     print("Reprovado")
