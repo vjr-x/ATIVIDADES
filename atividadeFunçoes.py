@@ -22,14 +22,12 @@ while True:
     exibir_menu()
     opcao = input("Escolha a opção: ")
 
-    if opcao == "0":
-        break
+    if opcao == "0": break
 
-    elif opcao == "1":
-        saudacao()
+    elif opcao == "1": saudacao()
 
-    elif opcao == "2":
-        sobre()
+    elif opcao == "2": sobre()
 
-    elif opcao == "3":
-        ajuda()
+    elif opcao == "3": ajuda()
+
+    else: print("Opção inválida!")
